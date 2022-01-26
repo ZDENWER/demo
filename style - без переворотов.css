@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    background-color: #F4F5F6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 41.5px 151.5px;
+
+}
+
+.social__list {
+    display: flex;
+    gap: 15px;
+}   
+
+.social__list-item {
+    list-style-type: none;
+}
+
+.social__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+
+.vk {
+    background-image: url(image/social-vk.png);
+}
+
+.vk:hover {
+    background-image: url(image/social-vk-hover.png);
+}
+
+.instagram {
+    background-image: url(image/social-inst.png);
+}
+
+.instagram:hover {
+    background-image: url(image/social-instagram-hover.png);
+}
+
+.facebook {
+    background-image: url(image/social-fb.png);
+}
+
+.facebook:hover {
+    background-image: url(image/social-facebook-hover.png);
+}
+
+.youtube {
+    background-image: url(image/youtube.png);
+}
+
+.youtube:hover {
+    background-image: url(image/social-youtube-hover.png);
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+.container {
+    padding: 50px 160px;
+}
+
+.main {
+    display: flex;
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 32px;
+}
+
+.card {
+    width: 352px;
+    border: 2px solid #E6E8EC;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+}
+
+.card__content {
+    padding: 30px 25px 25px 25px;
+}
+
+.card__name {
+    font-family: Maxico;
+    font-weight: 500;
+    font-size: 40px;
+    color: #20272C;
+    line-height: 1;
+    padding-bottom: 13px;
+}
+
+.card__text {
+    font-family: Gotham Pro;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777E90;
+    padding-bottom: 80px;
+}
+
+.card__button-container {
+    position: absolute;
+    bottom: 28px;
+    left: 22px;
+}
+
+.card__image-container {
+    width: 348px;
+    max-height: 215px;
+    position: relative;
+}
+
+.card__image {
+    width: 348px;
+}
+
+.card__button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #E6E8EC;
+    background-color: #fff;
+    border-radius: 15px;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.button_vk {
+    width: 50%;
+    border-right-width: 1px ;
+    border-radius: 15px 0 0 15px;
+    background-image: url(image/button-vk.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button_vk:hover {
+    background: url(image/button-vk-hover.png) center center no-repeat, #0077FF;
+}
+
+.button_vk:active {
+    background: url(image/button-vk-hover.png) center center no-repeat, linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0077FF;
+}
+
+.button_instagram {
+    width: 50%;
+    border-left-width: 1px;
+    border-radius: 0 15px 15px 0;
+    background-image: url(image/button-instagram.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.button_instagram:hover {
+    background: url(image/button-instagram-hover.png) center center no-repeat, radial-gradient(100.61% 135.95% at -0.61% 100%, #FDBF53 0%, #F1203E 32.73%, #B629A7 64.85%, #5342D5 100%), #DA291C;
+}
+
+.button_instagram:active {
+    background: url(image/button-instagram-hover.png) center center no-repeat, linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(100.61% 135.95% at -0.61% 100%, #FDBF53 0%, #F1203E 32.73%, #B629A7 64.85%, #5342D5 100%), #DA291C;
+}
+
+.write-us {
+    background-image: url(image/ic_Write_message.png);
+    background-repeat: no-repeat;
+    background-position: center left 76px;
+    padding-left: 36px;
+}
+
+.write-us:hover {
+    background-image: url(image/ic_Write_message-hover.png);
+    background-color: #DA291C;
+    color: #FCFCFD;
+}
+
+.card__button.write-us:active {
+    background: url(image/ic_Write_message-hover.png) center left 76px no-repeat,  radial-gradient(49.7% 107.76% at 49.7% 50%, rgba(255, 193, 35, 0.4) 64.63%, rgba(218, 41, 28, 0.4) 100%), #DA291C; 
+}
+
+.button__school:hover {
+    background-color: #DA291C;
+    color: #FCFCFD;
+}
+
+.button__school:active {
+    background: radial-gradient(49.7% 107.76% at 49.7% 50%, rgba(255, 193, 35, 0.4) 64.63%, rgba(218, 41, 28, 0.4) 100%), #DA291C;
+}
+
+.card__button-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 302px;
+    height: 58px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card__image {
+    border-radius: 10px 10px 0 0;
+}
+
+.footer__social__list {
+    gap: 30px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 165px;
+    border-top: 2px solid #E5E5E5;
+}
+
+.footer__vk {
+    background-image: url(image/footer__vk.png);
+    background-size: 40px;
+}
+
+.footer__vk:hover {
+    background-image: url(image/footer__vk-hover.png);
+}
+
+.footer__instagram {
+    background-image: url(image/footer__instagram.png);
+    background-size: 40px;
+}
+
+.footer__instagram:hover {
+    background-image: url(image/footer__instagram-hover.png);
+}
+
+.footer__facebook {
+    background-image: url(image/footer__facebook.png);
+    background-size: 40px;
+}
+
+.footer__facebook:hover {
+    background-image: url(image/footer__facebook-hover.png);
+}
+
+.footer__youtube {
+    background-image: url(image/footer__youtube.png);
+    background-size: 40px;
+}
+
+.footer__youtube:hover {
+    background-image: url(image/footer__youtube-hover.png);
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 46px;
+}
+
+.footer__bottom-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    border-top: 2px solid #E5E5E5;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 6px 40px 0;
+
+    font-family: Gotham Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #777E90;
+    ;
+}
+
+.copywright {
+    margin-right: 100px;
+}
+
+.contact {
+    padding-left: 38px;
+}
+
+.address {
+    background: url(image/icons-location.png) left center no-repeat;
+}
+
+.phone {
+    background: url(image/icons-phone.png) left center no-repeat;
+}
+
+.email {
+    background: url(image/icons-mail.png) left center no-repeat;
+}
+
+
+
+.front__image-photo-studio,
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    
+    transition: transform .6s linear;
+}
